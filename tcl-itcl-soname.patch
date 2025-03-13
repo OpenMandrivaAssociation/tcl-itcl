@@ -1,0 +1,12 @@
+--- a/configure
++++ b/configure
+@@ -7338,7 +7338,7 @@ fi
+ 
+ 	    # TEA specific: use LDFLAGS_DEFAULT instead of LDFLAGS
+ 	    SHLIB_LD='${CC} ${CFLAGS} ${LDFLAGS_DEFAULT} -shared'
+-	    LDFLAGS="$LDFLAGS -Wl,--export-dynamic"
++	    LDFLAGS="$LDFLAGS -Wl,--export-dynamic -Wl,-soname,\${@}"
+ 
+ 	    case $system in
+ 	    DragonFly-*|FreeBSD-*)
+
