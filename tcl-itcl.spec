@@ -2,7 +2,7 @@
 
 Summary:        Object oriented extensions to Tcl and Tk
 Name:           tcl-%{oname}
-Version:        4.3.2
+Version:        4.3.8
 Release:        1
 License:        TCL
 Group:          System/Libraries
@@ -48,7 +48,7 @@ Development headers and libraries for linking against itcl.
 #--------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{oname}%{version}
+%autosetup -p1 -n itcl4.3.8
 
 %build
 %configure
